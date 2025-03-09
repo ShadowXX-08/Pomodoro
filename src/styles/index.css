@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	* {
+	  font-family: Poppins, sans-serif;
+	}
+  }
+  @layer components {
+	.btn {
+	  @apply inline-block rounded-[5px] px-3 py-1 text-[18px] font-bold text-white;
+	}
+  
+	.btn-active {
+	  @apply bg-black/15;
+	}
+  
+	.timer {
+	  @apply text-[130px] font-bold text-white;
+	}
+  }

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="WIDTH=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="/dist/index.css" />
+    <title>Pomodoro</title>
+  </head>
+  <body class="bg-pomodoro">
+    <div class="grid h-screen place-items-center" id="main">
+      <div class="flex flex-col items-center justify-center gap-6 rounded-[10px] bg-white/10 px-16 py-10">
+        <div class="flex items-center justify-between w-full gap-4">
+          <button class="btn btn-active" data-type="POMODORO">Pomodoro</button>
+          <button class="btn" data-type="SHORT_BREAK">Short Break</button>
+          <button class="btn" data-type="LONG_BREAK">Long Break</button>
+        </div>
+
+        <p class="timer">25:00</p>
+        <button id="start-pause-btn" class="rounded-[10px] bg-white px-[40px] py-[10px] text-[30px] font-semibold text-[#ba4949] transition-all active:scale-95">Start</button>
+      </div>
+    </div>
+  </body>
+  <script src="/dist/index.js" type="module"></script>
+</html>
